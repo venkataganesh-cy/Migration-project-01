@@ -38,3 +38,5 @@ Building a data pipeline to move all the tables from a specific database in on-p
 7. Integration runtimes in adf
 8. Using different activities in pipelines some are copy data, lookup and forEach.
 9. Dynamically providing folder name and file name while ingesting.
+10. Learnt different kinds of Triggers and using them.
+
