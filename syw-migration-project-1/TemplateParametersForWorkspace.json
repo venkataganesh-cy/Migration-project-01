@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "syw-migration-project-1"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"syw-migration-project-1-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:syw-migration-project-1.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://storedatalakegen2.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://kv-migration-project-1.vault.azure.net/"
+		},
+		"Onperm_SqlServer_properties_typeProperties_server": {
+			"value": "GANESH\\SQLEXPRESS"
+		},
+		"Onperm_SqlServer_properties_typeProperties_database": {
+			"value": "AdventureWorksLT2025"
+		},
+		"Onperm_SqlServer_properties_typeProperties_userName": {
+			"value": "GANESH"
+		},
+		"syw-migration-project-1-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://storedatalakegen2.dfs.core.windows.net"
+		}
+	}
+}
